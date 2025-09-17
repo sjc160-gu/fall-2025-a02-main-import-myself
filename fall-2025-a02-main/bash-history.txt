@@ -29,3 +29,7 @@
    29  bash data-script.bash > bash-stdout.txt
    30  cat stdev-alcohol-yes.txt
    31  history > bash-history.txt
+   32  git add .
+   33  git commit -m "final-submission"
+   34  git push
+   35  history > bash-history.txt
