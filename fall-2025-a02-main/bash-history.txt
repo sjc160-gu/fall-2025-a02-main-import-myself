@@ -1,0 +1,31 @@
+    1  head NCBirths2004.csv
+    2  cd fall-2025-a02-main
+    3  head NCBirths2004.csv
+    4  head -n NCBirths2004.csv > headers.txt
+    5  head -n NCBirths2004.csv | tr ',' '\n' > headers.txt
+    6  head -n 1 NCBirths2004.csv > headers.txt
+    7  touch data-script.bash
+    8  chmod +x data-script.bash
+    9  bash data-script.bash > bash-stdout.txt
+   10  chmod +x data-script.bash
+   11  bash data-script.bash > bash-stdout.txt
+   12  chmod +x data-script.bash
+   13  bash data-script.bash > bash-stdout.txt
+   14  sudo apt-get update
+   15  sudo apt-get install -y bc
+   16  bash data-script.bash > bash-stdout.txt
+   17  pwd
+   18  git status
+   19  git add data-script.bash bash-stdout.txt smoker-yes-med.txt smoker-no-med.txt alcochol-yes-avg.txt alcohol-no-avg.txt
+   20  git add
+   21  git add .
+   22  git commit 
+   23  git commit -m "Adding most files"
+   24  git add data-script.bash
+   25  git add .
+   26  git commit -m "Adding most files- still have to corrrect stdev"
+   27  git push
+   28  chmod +x data-script.bash
+   29  bash data-script.bash > bash-stdout.txt
+   30  cat stdev-alcohol-yes.txt
+   31  history > bash-history.txt

@@ -88,15 +88,13 @@ echo "The Average Weight of the Baby if Alc = No: $alc_no_avg"
 
 # Standard Deviation Calculation------
 # NOTE: Ai-assisted for calculations
-read ss n < <( baby_weight "$weight_column" "$alcohol_column" "Yes" \
-  | awk -v m="$alc_yes_avg" '{d=$1-m; ss+=d*d; c++} END{ if(c>0){print ss, c} }' )
-
-if [[ -z "${n:-}" || "$n" -eq 0 ]]; then
-  std_alc_yes="NaN"
-else
-  std_alc_yes=$(echo "scale=10; sqrt($ss/$n)" | bc -l)
-fi
-
+std_alc_yes=$(
+  baby_weight "$weight_column" "$alcohol_column" "Yes" \
+  | awk -v m="$alc_yes_avg" '
+      {d=$1-m; ss+=d*d; c++}
+      END{ if(c>0){ printf("%.10f\n", sqrt(ss/c)) } else { print "NaN" } }
+    '
+)
 
 echo "$std_alc_yes" > stddev-alcohol-yes.txt
 echo "Standard dev if Alc = Yes: $std_alc_yes"

@@ -2,4 +2,4 @@ The Median Weight of the Baby if Smoker = Yes: 3204
 The Median Weight of the Baby if Smoker = No: 3459.00000000000000000000
 The Average Weight of the Baby if Alc = Yes: 3345.25
 The Average Weight of the Baby if Alc = No: 3448.67
-Standard dev if Alc = Yes: 
+Standard dev if Alc = Yes: 553.8724469587
