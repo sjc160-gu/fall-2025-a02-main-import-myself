@@ -83,7 +83,6 @@ alc_yes_avg=$( baby_weight "$weight_column" "$alcohol_column" "Yes" | mean_get )
 
 echo "$alc_no_avg"  > alcohol-no-avg.txt
 echo "$alc_yes_avg" > alcohol-yes-avg.txt
-
 echo "The Average Weight of the Baby if Alc = Yes: $alc_yes_avg"
 echo "The Average Weight of the Baby if Alc = No: $alc_no_avg"
 
